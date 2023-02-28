@@ -116,7 +116,4 @@ svg{
     color: ${props => props.theme.white}
 }
 }
-
-
-
 `;
