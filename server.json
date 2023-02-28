@@ -15,6 +15,15 @@
           "category": "Alimentação",
           "price": 59,
           "createdAt": "2023-02-27T20:00:50.505Z"
-      }
+      },
+      {
+        "id": 3,
+        "description": "Curso Rocketseat",
+        "type": "outcome",
+        "category": "Educação",
+        "price": 1900,
+        "createdAt": "2023-02-27T19:11:50.505Z"
+    }
+
   ]
 }
