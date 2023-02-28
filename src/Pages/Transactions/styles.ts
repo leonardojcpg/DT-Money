@@ -14,7 +14,7 @@ border-spacing: 0 0.5rem;
 margin-top: 1.5rem ;
 
 td, tr{
-    padding: 1.25rem 2rem;
+    padding: 0.75rem 2rem;
     background: ${props => props.theme['grey-700']};
 
     &:first-child{

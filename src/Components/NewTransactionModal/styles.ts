@@ -13,7 +13,7 @@ background: rgba(0,0,0, 0.75);
 export const Content = styled(Dialog.Content)`
 min-width: 32rem;
 border-radius: 6px;
-padding: 2.5rem 3rem;
+padding: 2rem 3rem;
 background: ${props => props.theme['grey-800']};
 
 position: fixed;
