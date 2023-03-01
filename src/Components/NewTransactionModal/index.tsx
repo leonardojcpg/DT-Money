@@ -69,11 +69,10 @@ export function NewTransactionModal (){
                         Saída
                     </TransactionTypeButton>
                 </TransactionType>
-    )
-}}
+            )
+        }}
                 />
-
-
+                
                 <button 
                 type='submit'
                 disabled={isSubmitting}
