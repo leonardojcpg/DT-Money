@@ -33,11 +33,11 @@
       "id": 4
     },
     {
-      "description": "tênis",
-      "price": 500,
-      "category": "Calçados",
-      "type": "income",
-      "createdAt": "2023-03-01T21:18:33.370Z",
+      "description": "Cinema",
+      "price": 35,
+      "category": "Diversão",
+      "type": "outcome",
+      "createdAt": "2023-03-01T22:45:50.285Z",
       "id": 5
     }
   ]
