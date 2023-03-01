@@ -3,7 +3,7 @@ import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from './styles'
 import * as z from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 
 const newTransactionFormSchema = z.object({
     description: z.string(),
@@ -16,7 +16,9 @@ type NewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>
 
 export function NewTransactionModal (){
 
-    const {register, 
+    const {
+        control,
+        register, 
         handleSubmit,
         formState: {isSubmitting}
     } = useForm<NewTransactionFormInputs>({
@@ -46,15 +48,18 @@ export function NewTransactionModal (){
                 <input type="number" 
                 placeholder='Preço' 
                 required
-                {...register('price')}
+                {...register('price', {valueAsNumber: true})}
                 />
                 <input type="text" 
                 placeholder='Categoria' 
                 required 
                 {...register('category')}
                 />
-
-                <TransactionType>
+                <Controller 
+                control={control}
+                name='type'
+                render={(props) => {
+                    return (<TransactionType>
                     <TransactionTypeButton value='income' variant='income'>
                         <ArrowCircleUp size={24}/>
                         Entrada
@@ -63,8 +68,11 @@ export function NewTransactionModal (){
                         <ArrowCircleDown size={24}/>
                         Saída
                     </TransactionTypeButton>
-
                 </TransactionType>
+    )
+}}
+                />
+
 
                 <button 
                 type='submit'
