@@ -31,7 +31,7 @@ form{
 input{
     border-radius: 6px;
     border: 0;
-    background: ${props => props.theme['grey-300']};
+    background: ${props => props.theme['grey-900']};
     color: ${props => props.theme['grey-300']};
     padding: 1rem;
 
@@ -50,7 +50,12 @@ button[type='submit']{
         border-radius: 6px;
         margin-top: 1.5rem;
 
-        &:hover{
+        &:disabled{
+            opacity: 0.6;
+            cursor: not not-allowed;
+        }
+
+        &:not(:disabled):hover{
             background: ${props => props.theme['green-700']};
             transition: background-color 0.2s;
         }
