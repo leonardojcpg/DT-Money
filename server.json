@@ -1,36 +1,5 @@
 {
   "transactions": [
-    {
-      "id": 1,
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Venda",
-      "price": 14000,
-      "createdAt": "2023-02-27T15:11:50.505Z"
-    },
-    {
-      "id": 2,
-      "description": "Hamburguer",
-      "type": "outcome",
-      "category": "Alimentação",
-      "price": 59,
-      "createdAt": "2023-02-27T20:00:50.505Z"
-    },
-    {
-      "id": 3,
-      "description": "Curso Rocketseat",
-      "type": "outcome",
-      "category": "Educação",
-      "price": 1900,
-      "createdAt": "2023-02-27T19:11:50.505Z"
-    },
-    {
-      "description": "Cinema",
-      "price": 50,
-      "category": "Diversão",
-      "type": "outcome",
-      "createdAt": "2023-03-02T00:32:53.852Z",
-      "id": 4
-    }
+    
   ]
 }

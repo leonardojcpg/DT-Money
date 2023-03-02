@@ -84,7 +84,7 @@ export function NewTransactionModal() {
           <Controller
             control={control}
             name="type"
-            render={({field}) => {
+            render={({ field }) => {
               return (
                 <TransactionType onValueChange={field.onChange}>
                   <TransactionTypeButton value="income" variant="income">
