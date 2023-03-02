@@ -84,14 +84,14 @@ export function NewTransactionModal() {
           <Controller
             control={control}
             name="type"
-            render={(props) => {
+            render={({field}) => {
               return (
-                <TransactionType>
+                <TransactionType onValueChange={field.onChange}>
                   <TransactionTypeButton value="income" variant="income">
                     <ArrowCircleUp size={24} />
                     Entrada
                   </TransactionTypeButton>
-                  <TransactionTypeButton variant="outcome" value="outcome">
+                  <TransactionTypeButton value="outcome" variant="outcome">
                     <ArrowCircleDown size={24} />
                     Saída
                   </TransactionTypeButton>
