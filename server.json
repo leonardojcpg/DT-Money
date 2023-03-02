@@ -26,19 +26,11 @@
     },
     {
       "description": "Cinema",
-      "price": 35,
+      "price": 50,
       "category": "Diversão",
       "type": "income",
-      "createdAt": "2023-03-01T18:35:27.931Z",
+      "createdAt": "2023-03-01T23:51:57.083Z",
       "id": 4
-    },
-    {
-      "description": "Cinema",
-      "price": 35,
-      "category": "Diversão",
-      "type": "outcome",
-      "createdAt": "2023-03-01T22:45:50.285Z",
-      "id": 5
     }
   ]
 }
